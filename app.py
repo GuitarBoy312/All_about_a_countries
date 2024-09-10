@@ -36,7 +36,7 @@ def get_country_info_from_openai(country_name, topic):
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": f"너는 한국의 초등학교 5학년 영어선생님이야. 만약에 {country_name}을 Korean으로 입력하면 절대로 대답해주지 마. 꼭 알파벳으로 입력했을 때만 대답해 줘. 왜냐면 이건 영어 수업이니까."},
+            {"role": "system", "content": f"너는 한국의 초등학교 5학년 영어선생님이야."},
             {"role": "user", "content": f'''
              Tell me one or two sentence what is {topic} of {country_name}, and about the {topic} of {country_name} in Korean for elementary school students, and give one or two name of {topic} about {topic} of {country_name} in English right after Korean explanation. And do not print {topic}. 
              예시: 
