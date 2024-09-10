@@ -82,8 +82,11 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #f0f8ff;
-        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-color: #f0f8ff;  /* 하늘색 배경 */
+        color: #000000;  /* 검은색 텍스트 */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333333;  /* 제목에 약간 어두운 색을 적용 */
     }
     </style>
     """, 
