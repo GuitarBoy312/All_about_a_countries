@@ -77,15 +77,20 @@ if country_name:
         result = get_country_info_from_openai(country_name, topic_eng)
         st.write(result)
 
+# 밝은 하늘색 배경, 어두운 글씨, 연두색 버튼 설정
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: #121212;  /* 어두운 배경색 */
-        color: #f5f5f5;  /* 밝은 글자색 */
+        background-color: #f0f8ff;  /* 밝은 하늘색 배경 */
+        color: #333333;  /* 어두운 글씨색 */
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #ffffff;  /* 제목은 더 밝은 흰색으로 */
+        color: #000000;  /* 제목은 검은색으로 */
+    }
+    .stButton button {
+        background-color: #90ee90;  /* 버튼 색상을 연두색으로 */
+        color: #000000;  /* 버튼의 글씨는 검은색으로 */
     }
     </style>
     """, 
