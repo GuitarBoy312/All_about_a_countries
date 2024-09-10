@@ -57,12 +57,13 @@ st.title("All about a country 🌍")
 
 st.divider()  # Streamlit version 1.23+
 st.header("사용방법")
-st.markdown("### 1️⃣ 알고 싶은 나라 이름을 영어로 적고 엔터키 또는 나라 알아보기 버튼을 눌러주세요.")
-st.markdown("### 2️⃣ 더 알고 싶은 나라가 있으면 나라 이름을 다시 적고 엔터나 버튼을 눌러주세요.")
+st.markdown("### 1️⃣ 한국어와 영어 중 어떤 말로 설명하는게 나한테 맞을지 선택하세요.")
+st.markdown("### 2️⃣ 알고 싶은 나라 이름을 영어로 적고 엔터키 또는 나라 알아보기 버튼을 눌러주세요.")
+st.markdown("### 3️⃣ 더 알고 싶은 나라가 있으면 나라 이름을 다시 적고 엔터나 버튼을 눌러주세요.")
 st.markdown("### ❗ 이 앱은 완벽하지 않아요. 실수할 때가 있으면 나라 알아보기 버튼을 다시 눌러주세요.")
 
 # 언어 선택 드롭다운 버튼 추가
-language = st.selectbox("언어를 선택하세요:", ["한국어", "영어"])
+language = st.selectbox("어떤 언어로 설명할까요?", ["한국어", "영어"])
 
 # 나라 이름 입력
 country_name = st.text_input("나라 이름을 영어로 입력하세요:")
