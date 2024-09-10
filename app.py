@@ -77,18 +77,16 @@ if country_name:
         result = get_country_info_from_openai(country_name, topic_eng)
         st.write(result)
 
-# 예쁜 UI를 위해 배경 및 글꼴 스타일 설정
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: #f0f8ff;  /* 하늘색 배경 */
-        color: #000000;  /* 검은색 텍스트 */
+        background-color: #121212;  /* 어두운 배경색 */
+        color: #f5f5f5;  /* 밝은 글자색 */
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #333333;  /* 제목에 약간 어두운 색을 적용 */
+        color: #ffffff;  /* 제목은 더 밝은 흰색으로 */
     }
     </style>
     """, 
     unsafe_allow_html=True
-)
