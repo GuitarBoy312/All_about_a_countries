@@ -15,8 +15,7 @@ TOPICS = {
     "언어": "Language",
     "음식": "Famous foods",
     "랜드마크": "Landmark",
-    "종교": "Religion",
-    "유명한 사람": "famous person"
+    "종교": "Religion"
 }
 
 # 이모지 사전
@@ -28,7 +27,6 @@ EMOJIS = {
     "음식": "🍽️",
     "랜드마크": "🏛️",
     "종교": "⛪",
-    "유명한 사람": "🤴"
 }
 
 def get_country_info_from_openai(country_name, topic):
@@ -40,8 +38,8 @@ def get_country_info_from_openai(country_name, topic):
             {"role": "user", "content": f'''
              Tell me one or two sentence what is {topic} of {country_name}, and about the {topic} of {country_name} in Korean for elementary school students, and give one or two name of {topic} about {topic} of {country_name} in English right after Korean explanation. And do not print {topic}. 
              예시: 
-             유명한 사람
-             유키 구라모토는 일본의 유명한 작곡가입니다.(Kuramoto Yuki)...'''}
+             언어
+             일본의 언어는 일본어입니다.(Japanese)...'''}
         ]
     )
     return completion.choices[0].message.content
