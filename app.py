@@ -29,7 +29,7 @@ EMOJIS = {
     "종교": "⛪",
 }
 
-def get_country_info_from_openai(country_name, topic, language):
+def get_country_info_from_openai(country_name, topic):
     """OpenAI API를 통해 나라 정보 생성"""
     if language == "한국어":
         prompt = f'''
