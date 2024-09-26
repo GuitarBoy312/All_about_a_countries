@@ -53,7 +53,7 @@ def get_country_info_from_openai(country_name, topic):
 
 
 # 앱 제목
-st.title("All about a country 🌍")
+st.title("All about a countries 🌍")
 
 st.divider()  # Streamlit version 1.23+
 st.header("사용방법")
